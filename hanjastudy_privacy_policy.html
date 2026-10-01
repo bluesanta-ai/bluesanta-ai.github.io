@@ -39,12 +39,12 @@
 <main>
 <div class="card">
   <p><strong>시행일: 2026년 10월 1일</strong></p>
-  <p>본 개인정보처리방침은 Android 앱 「한자능력검정시험」(패키지명 com.korean.hanjastudy, 이하 "앱")에 적용됩니다. 앱은 개인정보를 수집하지 않으며, 인터넷 연결 없이 기기 안에서만 동작합니다.</p>
+  <p>본 개인정보처리방침은 Android 앱 「한자능력검정시험」(패키지명 com.bx.hanjastudy, 이하 "앱")에 적용됩니다. 앱의 학습 기능은 기기 안에서만 동작하며, 개발자는 사용자의 개인정보를 수집하지 않습니다. 다만 앱은 무료 제공을 위해 Google AdMob 광고를 표시하며, 광고 제공 과정에서 Google이 아래 4항의 정보를 처리할 수 있습니다.</p>
 </div>
 
 <div class="card">
   <h2>1. 수집하는 개인정보</h2>
-  <p>앱은 이름, 이메일, 전화번호, 위치, 기기 식별자, 광고 ID 등 <strong>어떠한 개인정보도 수집·저장·전송하지 않습니다.</strong> 회원 가입이나 로그인 절차도 없습니다.</p>
+  <p>개발자는 이름, 이메일, 전화번호, 위치 등 <strong>개인정보를 직접 수집·저장하지 않으며, 개발자의 서버로 전송하는 정보도 없습니다.</strong> 회원 가입이나 로그인 절차도 없습니다. 광고 표시를 위해 Google AdMob SDK가 처리하는 정보는 4항을 참고해 주십시오.</p>
 </div>
 
 <div class="card">
@@ -67,19 +67,33 @@
     <tr><td>알림<br><span class="muted">POST_NOTIFICATIONS</span></td><td>사용자가 설정한 시각·주기에 오늘의 한자 알림을 표시하기 위해서만 사용합니다. 앱을 처음 실행할 때 허용 여부를 묻고, 허용하지 않아도 알림 외 모든 기능을 사용할 수 있습니다.</td></tr>
     <tr><td>부팅 완료 수신<br><span class="muted">RECEIVE_BOOT_COMPLETED</span></td><td>기기를 다시 켠 뒤에도 사용자가 설정한 알림 일정을 유지하기 위해 사용합니다.</td></tr>
     <tr><td>진동<br><span class="muted">VIBRATE</span></td><td>알림 도착 시 기기 설정에 따른 진동</td></tr>
+    <tr><td>인터넷 · 네트워크 상태<br><span class="muted">INTERNET, ACCESS_NETWORK_STATE</span></td><td>광고(Google AdMob)를 불러오기 위해 사용합니다. 학습 기능은 인터넷 없이도 동작합니다.</td></tr>
+    <tr><td>광고 ID<br><span class="muted">AD_ID</span></td><td>Google AdMob이 광고 제공·측정에 사용합니다. 기기 설정에서 광고 ID를 삭제하거나 재설정할 수 있습니다.</td></tr>
   </table></div>
-  <p>앱은 인터넷(INTERNET) 권한을 요청하지 않으며, 카메라·마이크·연락처·위치·사진 및 파일에 접근하지 않습니다.</p>
+  <p>앱은 카메라·마이크·연락처·위치·사진 및 파일에 접근하지 않습니다.</p>
 </div>
 
 <div class="card">
-  <h2>4. 제3자 제공 및 외부 서비스</h2>
-  <p>앱은 광고, 분석(애널리틱스), 오류 보고, 소셜 로그인 등 어떠한 제3자 SDK도 포함하지 않으며, 외부 서버와 통신하지 않습니다. 따라서 제3자에게 제공되는 정보가 없습니다.</p>
+  <h2>4. 광고 (Google AdMob)</h2>
+  <p>앱은 화면 하단에 Google LLC가 제공하는 AdMob 배너 광고를 표시합니다. 광고 제공·측정·부정 행위 방지를 위해 AdMob SDK가 다음 정보를 수집해 Google로 전송할 수 있습니다.</p>
+  <ul>
+    <li>광고 ID 등 기기 식별자, IP 주소(대략적인 위치 추정)</li>
+    <li>기기 모델, OS 버전, 앱 정보, 광고 노출·클릭 등 상호작용 정보</li>
+    <li>오류 및 성능 진단 정보</li>
+  </ul>
+  <p>이 정보는 Google의 개인정보처리방침에 따라 처리되며, 개발자는 이 정보에 접근하지 않습니다. 자세한 내용은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google이 파트너 앱의 정보를 사용하는 방식</a>을 참고해 주십시오.</p>
+  <p>맞춤 광고를 원하지 않으면 기기의 [설정 → Google → 광고]에서 광고 ID를 삭제하거나 재설정할 수 있습니다.</p>
+  <p>광고 외에 분석(애널리틱스), 소셜 로그인 등 다른 제3자 SDK는 포함하지 않으며, 개발자가 운영하는 서버와 통신하지 않습니다.</p>
+</div>
+
+<div class="card">
+  <h2>4-1. 공유 및 읽어 주기</h2>
   <p>사자성어 화면의 "공유" 기능은 사용자가 직접 선택한 앱으로 성어 텍스트를 전달하는 Android 표준 공유 기능이며, 전달된 내용은 해당 앱의 개인정보처리방침을 따릅니다. 읽어 주기(TTS) 기능은 기기에 설치된 음성 합성 엔진을 사용하며, 앱이 음성 데이터를 저장하거나 전송하지 않습니다.</p>
 </div>
 
 <div class="card">
   <h2>5. 아동의 개인정보</h2>
-  <p>앱은 초등학생을 포함한 모든 연령이 사용할 수 있으며, 아동을 포함한 어떤 사용자로부터도 개인정보를 수집하지 않습니다.</p>
+  <p>앱은 초등학생을 포함한 모든 연령이 사용할 수 있습니다. 개발자는 아동을 포함한 어떤 사용자로부터도 개인정보를 직접 수집하지 않습니다. 광고는 Google AdMob 정책에 따라 제공됩니다.</p>
 </div>
 
 <div class="card">
