@@ -53,11 +53,11 @@
 <section class="lang on" id="ko">
 <div class="card">
   <p><strong>시행일: 2026년 10월 1일</strong></p>
-  <p>본 개인정보처리방침은 Android 앱 「사자성어」(패키지명 com.bx.hanjaidiom, 이하 "앱")에 적용됩니다. 앱은 개인정보를 수집하지 않으며, 인터넷 연결 없이 기기 안에서만 동작합니다.</p>
+  <p>본 개인정보처리방침은 Android 앱 「사자성어」(패키지명 com.bx.hanjaidiom, 이하 "앱")에 적용됩니다. 앱의 학습 기능은 기기 안에서만 동작하며, 개발자는 사용자의 개인정보를 수집하지 않습니다. 다만 앱은 무료 제공을 위해 Google AdMob 광고를 표시하며, 광고 제공 과정에서 Google이 아래 4항의 정보를 처리할 수 있습니다.</p>
 </div>
 <div class="card">
   <h2>1. 수집하는 개인정보</h2>
-  <p>앱은 이름, 이메일, 전화번호, 위치, 기기 식별자, 광고 ID 등 <strong>어떠한 개인정보도 수집·저장·전송하지 않습니다.</strong> 회원 가입이나 로그인 절차도 없습니다.</p>
+  <p>개발자는 이름, 이메일, 전화번호, 위치 등 <strong>개인정보를 직접 수집·저장하지 않으며, 개발자의 서버로 전송하는 정보도 없습니다.</strong> 회원 가입이나 로그인 절차도 없습니다. 광고 표시를 위해 Google AdMob SDK가 처리하는 정보는 4항을 참고해 주십시오.</p>
 </div>
 <div class="card">
   <h2>2. 기기 안에만 저장되는 정보</h2>
@@ -77,17 +77,22 @@
     <tr><td>알림 (POST_NOTIFICATIONS)</td><td>사용자가 설정한 주기로 사자성어 알림을 표시하기 위해서만 사용합니다. 사용자가 허용하지 않아도 알림 외 모든 기능을 사용할 수 있습니다.</td></tr>
     <tr><td>부팅 완료 수신 (RECEIVE_BOOT_COMPLETED)</td><td>기기를 다시 켠 뒤에도 사용자가 설정한 알림 주기를 유지하기 위해 사용합니다.</td></tr>
     <tr><td>진동 (VIBRATE)</td><td>알림 도착 시 기기 설정에 따른 진동</td></tr>
+    <tr><td>인터넷 · 네트워크 상태 (INTERNET, ACCESS_NETWORK_STATE)</td><td>광고(Google AdMob)를 불러오기 위해 사용합니다. 학습 기능은 인터넷 없이도 동작합니다.</td></tr>
+    <tr><td>광고 ID (AD_ID)</td><td>Google AdMob이 광고 제공·측정에 사용합니다. 기기 설정에서 광고 ID를 삭제하거나 재설정할 수 있습니다.</td></tr>
   </table>
-  <p>앱은 인터넷(INTERNET) 권한을 요청하지 않으며, 카메라·마이크·연락처·위치·저장소에 접근하지 않습니다.</p>
+  <p>앱은 카메라·마이크·연락처·위치·저장소에 접근하지 않습니다.</p>
 </div>
 <div class="card">
-  <h2>4. 제3자 제공 및 외부 서비스</h2>
-  <p>앱은 광고, 분석(애널리틱스), 오류 보고, 소셜 로그인 등 어떠한 제3자 SDK도 포함하지 않으며, 외부 서버와 통신하지 않습니다. 따라서 제3자에게 제공되는 정보가 없습니다.</p>
+  <h2>4. 광고 및 외부 서비스</h2>
+  <p>앱은 화면 하단에 Google LLC가 제공하는 AdMob 배너 광고를 표시합니다. 광고 제공·측정·부정 행위 방지를 위해 AdMob SDK가 다음 정보를 수집해 Google로 전송할 수 있습니다.</p>
+  <ul><li>광고 ID 등 기기 식별자, IP 주소(대략적인 위치 추정)</li><li>기기 모델, OS 버전, 앱 정보, 광고 노출·클릭 등 상호작용 정보</li><li>오류 및 성능 진단 정보</li></ul>
+  <p>이 정보는 Google의 개인정보처리방침에 따라 처리되며, 개발자는 이 정보에 접근하지 않습니다. 자세한 내용은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google이 파트너 앱의 정보를 사용하는 방식</a>을 참고해 주십시오. 맞춤 광고를 원하지 않으면 기기의 [설정 → Google → 광고]에서 광고 ID를 삭제하거나 재설정할 수 있습니다.</p>
+  <p>광고 외에 분석(애널리틱스), 소셜 로그인 등 다른 제3자 SDK는 포함하지 않으며, 개발자가 운영하는 서버와 통신하지 않습니다.</p>
   <p>"공유" 기능은 사용자가 직접 선택한 앱으로 성어 텍스트를 전달하는 Android 표준 공유 기능이며, 전달된 내용은 해당 앱의 개인정보처리방침을 따릅니다. 읽어 주기(TTS) 기능은 기기에 설치된 음성 합성 엔진을 사용하며, 앱이 음성 데이터를 저장하거나 전송하지 않습니다.</p>
 </div>
 <div class="card">
   <h2>5. 아동의 개인정보</h2>
-  <p>앱은 모든 연령이 사용할 수 있으며, 아동을 포함한 어떤 사용자로부터도 개인정보를 수집하지 않습니다.</p>
+  <p>앱은 모든 연령이 사용할 수 있습니다. 개발자는 아동을 포함한 어떤 사용자로부터도 개인정보를 직접 수집하지 않으며, 광고는 Google AdMob 정책에 따라 제공됩니다.</p>
 </div>
 <div class="card">
   <h2>6. 방침의 변경</h2>
@@ -104,11 +109,11 @@
 <section class="lang" id="en">
 <div class="card">
   <p><strong>Effective date: October 1, 2026</strong></p>
-  <p>This Privacy Policy applies to the Android app "Hanja Idioms" (package name com.bx.hanjaidiom, the "App"). The App does not collect personal data and works entirely on your device without an internet connection.</p>
+  <p>This Privacy Policy applies to the Android app "Hanja Idioms" (package name com.bx.hanjaidiom, the "App"). The App's learning features run entirely on your device and the developer does not collect your personal data. To keep the App free, it shows Google AdMob ads, and Google may process the information described in Section 4 to serve them.</p>
 </div>
 <div class="card">
   <h2>1. Personal data we collect</h2>
-  <p>The App <strong>does not collect, store or transmit any personal data</strong> — no name, email address, phone number, location, device identifier or advertising ID. There is no account or sign-in.</p>
+  <p>The developer <strong>does not itself collect or store any personal data</strong> — no name, email address, phone number or location — and nothing is sent to any server run by the developer. There is no account or sign-in. For the information processed by the Google AdMob SDK to show ads, see Section 4.</p>
 </div>
 <div class="card">
   <h2>2. Data stored only on your device</h2>
@@ -128,17 +133,22 @@
     <tr><td>Notifications (POST_NOTIFICATIONS)</td><td>Only to show idiom reminders at the interval you choose. Everything except reminders works without it.</td></tr>
     <tr><td>Boot completed (RECEIVE_BOOT_COMPLETED)</td><td>To keep your reminder schedule after the device restarts.</td></tr>
     <tr><td>Vibrate (VIBRATE)</td><td>Vibration for reminders, according to your device settings.</td></tr>
+    <tr><td>Internet, network state (INTERNET, ACCESS_NETWORK_STATE)</td><td>To load ads (Google AdMob). Learning features work offline.</td></tr>
+    <tr><td>Advertising ID (AD_ID)</td><td>Used by Google AdMob to serve and measure ads. You can delete or reset it in your device settings.</td></tr>
   </table>
-  <p>The App does not request the INTERNET permission and does not access the camera, microphone, contacts, location or storage.</p>
+  <p>The App does not access the camera, microphone, contacts, location or storage.</p>
 </div>
 <div class="card">
-  <h2>4. Third parties and external services</h2>
-  <p>The App contains no third-party SDKs — no advertising, analytics, crash reporting or social login — and does not communicate with any server. No data is shared with third parties.</p>
+  <h2>4. Advertising and external services</h2>
+  <p>The App shows banner ads from Google AdMob (Google LLC) at the bottom of the screen. To serve and measure ads and prevent fraud, the AdMob SDK may collect and send the following to Google:</p>
+  <ul><li>Device identifiers such as the advertising ID, and IP address (approximate location)</li><li>Device model, OS version, app information, and ad interactions such as impressions and clicks</li><li>Crash and performance diagnostics</li></ul>
+  <p>This information is handled under Google's privacy policy; the developer has no access to it. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>. To opt out of personalized ads, delete or reset your advertising ID in Settings → Google → Ads.</p>
+  <p>Apart from ads, the App contains no other third-party SDKs (no analytics or social login) and does not communicate with any server run by the developer.</p>
   <p>The "Share" button uses the standard Android share sheet to pass idiom text to an app you choose; that content is then governed by the chosen app's privacy policy. Text-to-speech uses the speech engine installed on your device; the App does not store or transmit audio.</p>
 </div>
 <div class="card">
   <h2>5. Children</h2>
-  <p>The App is suitable for all ages and does not collect personal data from anyone, including children.</p>
+  <p>The App is suitable for all ages. The developer does not itself collect personal data from anyone, including children; ads are served under Google AdMob policies.</p>
 </div>
 <div class="card">
   <h2>6. Changes to this policy</h2>
@@ -154,11 +164,11 @@
 <section class="lang" id="zh-CN">
 <div class="card">
   <p><strong>生效日期：2026 年 10 月 1 日</strong></p>
-  <p>本隐私政策适用于 Android 应用「四字成语」（包名 com.bx.hanjaidiom，以下简称"本应用"）。本应用不收集个人信息，所有功能均在设备本地离线运行。</p>
+  <p>本隐私政策适用于 Android 应用「四字成语」（包名 com.bx.hanjaidiom，以下简称"本应用"）。本应用的学习功能均在设备本地运行，开发者不收集您的个人信息。为保持免费，本应用展示 Google AdMob 广告，Google 可能为投放广告而处理第 4 条所述信息。</p>
 </div>
 <div class="card">
   <h2>1. 我们收集的个人信息</h2>
-  <p>本应用<strong>不收集、不存储、不传输任何个人信息</strong>，包括姓名、电子邮件、电话号码、位置、设备标识符或广告 ID。无需注册或登录。</p>
+  <p>开发者<strong>不直接收集或存储任何个人信息</strong>（如姓名、电子邮件、电话号码、位置），也不会向开发者的服务器传输任何信息。无需注册或登录。Google AdMob SDK 为展示广告而处理的信息见第 4 条。</p>
 </div>
 <div class="card">
   <h2>2. 仅保存在您设备上的数据</h2>
@@ -178,17 +188,22 @@
     <tr><td>通知（POST_NOTIFICATIONS）</td><td>仅用于按您设定的间隔显示成语提醒。即使不授权，除提醒外的全部功能仍可使用。</td></tr>
     <tr><td>开机完成广播（RECEIVE_BOOT_COMPLETED）</td><td>设备重启后保持您设定的提醒计划。</td></tr>
     <tr><td>振动（VIBRATE）</td><td>收到提醒时按设备设置振动。</td></tr>
+    <tr><td>网络、网络状态（INTERNET、ACCESS_NETWORK_STATE）</td><td>用于加载广告（Google AdMob）。学习功能无需联网。</td></tr>
+    <tr><td>广告 ID（AD_ID）</td><td>Google AdMob 用于投放和衡量广告。您可在设备设置中删除或重置广告 ID。</td></tr>
   </table>
-  <p>本应用不申请网络（INTERNET）权限，也不访问相机、麦克风、通讯录、位置或存储。</p>
+  <p>本应用不访问相机、麦克风、通讯录、位置或存储。</p>
 </div>
 <div class="card">
-  <h2>4. 第三方与外部服务</h2>
-  <p>本应用不包含任何第三方 SDK（无广告、无分析统计、无崩溃上报、无社交登录），也不与任何服务器通信，因此不存在向第三方提供的数据。</p>
+  <h2>4. 广告与外部服务</h2>
+  <p>本应用在屏幕底部展示 Google LLC 提供的 AdMob 横幅广告。为投放、衡量广告及防止欺诈，AdMob SDK 可能收集以下信息并发送给 Google：</p>
+  <ul><li>广告 ID 等设备标识符、IP 地址（大致位置）</li><li>设备型号、系统版本、应用信息、广告展示与点击等互动信息</li><li>崩溃与性能诊断信息</li></ul>
+  <p>上述信息依照 Google 隐私政策处理，开发者无法访问。详情请参阅 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a> 及 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google 如何使用合作伙伴应用中的信息</a>。如不希望接收个性化广告，可在设备的“设置 → Google → 广告”中删除或重置广告 ID。</p>
+  <p>除广告外，本应用不包含其他第三方 SDK（无分析统计、无社交登录），也不与开发者运营的服务器通信。</p>
   <p>"分享"功能通过 Android 标准分享面板将成语文本传递给您选择的应用，之后的内容受该应用隐私政策约束。朗读功能使用设备已安装的语音引擎，本应用不保存或传输音频。</p>
 </div>
 <div class="card">
   <h2>5. 儿童隐私</h2>
-  <p>本应用适合所有年龄，不向包括儿童在内的任何用户收集个人信息。</p>
+  <p>本应用适合所有年龄。开发者不直接向包括儿童在内的任何用户收集个人信息；广告依照 Google AdMob 政策提供。</p>
 </div>
 <div class="card">
   <h2>6. 政策变更</h2>
@@ -204,11 +219,11 @@
 <section class="lang" id="zh-TW">
 <div class="card">
   <p><strong>生效日期：2026 年 10 月 1 日</strong></p>
-  <p>本隱私權政策適用於 Android 應用程式「四字成語」（套件名稱 com.bx.hanjaidiom，以下簡稱「本應用程式」）。本應用程式不蒐集個人資料，所有功能皆在裝置本機離線運作。</p>
+  <p>本隱私權政策適用於 Android 應用程式「四字成語」（套件名稱 com.bx.hanjaidiom，以下簡稱「本應用程式」）。本應用程式的學習功能皆在裝置本機運作，開發者不蒐集您的個人資料。為維持免費，本應用程式會顯示 Google AdMob 廣告，Google 可能為提供廣告而處理第 4 條所述資訊。</p>
 </div>
 <div class="card">
   <h2>1. 我們蒐集的個人資料</h2>
-  <p>本應用程式<strong>不蒐集、不儲存、不傳輸任何個人資料</strong>，包括姓名、電子郵件、電話號碼、位置、裝置識別碼或廣告 ID。無需註冊或登入。</p>
+  <p>開發者<strong>不直接蒐集或儲存任何個人資料</strong>（如姓名、電子郵件、電話號碼、位置），也不會傳輸任何資訊至開發者的伺服器。無需註冊或登入。Google AdMob SDK 為顯示廣告而處理的資訊請見第 4 條。</p>
 </div>
 <div class="card">
   <h2>2. 僅保存在您裝置上的資料</h2>
@@ -228,17 +243,22 @@
     <tr><td>通知（POST_NOTIFICATIONS）</td><td>僅用於依您設定的間隔顯示成語提醒。即使不授權，除提醒外的全部功能仍可使用。</td></tr>
     <tr><td>開機完成廣播（RECEIVE_BOOT_COMPLETED）</td><td>裝置重新啟動後保持您設定的提醒排程。</td></tr>
     <tr><td>震動（VIBRATE）</td><td>收到提醒時依裝置設定震動。</td></tr>
+    <tr><td>網路、網路狀態（INTERNET、ACCESS_NETWORK_STATE）</td><td>用於載入廣告（Google AdMob）。學習功能無需連網。</td></tr>
+    <tr><td>廣告 ID（AD_ID）</td><td>Google AdMob 用於提供及衡量廣告。您可在裝置設定中刪除或重設廣告 ID。</td></tr>
   </table>
-  <p>本應用程式不申請網路（INTERNET）權限，也不存取相機、麥克風、聯絡人、位置或儲存空間。</p>
+  <p>本應用程式不存取相機、麥克風、聯絡人、位置或儲存空間。</p>
 </div>
 <div class="card">
-  <h2>4. 第三方與外部服務</h2>
-  <p>本應用程式不包含任何第三方 SDK（無廣告、無分析統計、無當機回報、無社群登入），也不與任何伺服器通訊，因此不存在提供給第三方的資料。</p>
+  <h2>4. 廣告與外部服務</h2>
+  <p>本應用程式在畫面底部顯示 Google LLC 提供的 AdMob 橫幅廣告。為提供、衡量廣告及防範詐欺，AdMob SDK 可能蒐集下列資訊並傳送給 Google：</p>
+  <ul><li>廣告 ID 等裝置識別碼、IP 位址（大略位置）</li><li>裝置型號、系統版本、應用程式資訊、廣告曝光與點擊等互動資訊</li><li>當機與效能診斷資訊</li></ul>
+  <p>上述資訊依 Google 隱私權政策處理，開發者無法存取。詳情請參閱 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a> 與 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google 如何使用合作夥伴應用程式中的資訊</a>。如不希望接收個人化廣告，可在裝置的「設定 → Google → 廣告」中刪除或重設廣告 ID。</p>
+  <p>除廣告外，本應用程式不包含其他第三方 SDK（無分析統計、無社群登入），也不與開發者營運的伺服器通訊。</p>
   <p>「分享」功能透過 Android 標準分享面板將成語文字傳遞給您選擇的應用程式，之後的內容受該應用程式隱私權政策約束。朗讀功能使用裝置已安裝的語音引擎，本應用程式不保存或傳輸音訊。</p>
 </div>
 <div class="card">
   <h2>5. 兒童隱私</h2>
-  <p>本應用程式適合所有年齡，不向包括兒童在內的任何使用者蒐集個人資料。</p>
+  <p>本應用程式適合所有年齡。開發者不直接向包括兒童在內的任何使用者蒐集個人資料；廣告依 Google AdMob 政策提供。</p>
 </div>
 <div class="card">
   <h2>6. 政策變更</h2>
@@ -254,11 +274,11 @@
 <section class="lang" id="ja">
 <div class="card">
   <p><strong>施行日：2026 年 10 月 1 日</strong></p>
-  <p>本プライバシーポリシーは、Android アプリ「四字熟語」（パッケージ名 com.bx.hanjaidiom、以下「本アプリ」）に適用されます。本アプリは個人情報を収集せず、インターネット接続なしで端末内だけで動作します。</p>
+  <p>本プライバシーポリシーは、Android アプリ「四字熟語」（パッケージ名 com.bx.hanjaidiom、以下「本アプリ」）に適用されます。本アプリの学習機能は端末内だけで動作し、開発者は個人情報を収集しません。ただし無料で提供するため Google AdMob 広告を表示しており、広告配信のために Google が第 4 項の情報を処理する場合があります。</p>
 </div>
 <div class="card">
   <h2>1. 収集する個人情報</h2>
-  <p>本アプリは、氏名、メールアドレス、電話番号、位置情報、端末識別子、広告 ID など、<strong>いかなる個人情報も収集・保存・送信しません。</strong>会員登録やログインもありません。</p>
+  <p>開発者は氏名、メールアドレス、電話番号、位置情報などの<strong>個人情報を直接収集・保存せず、開発者のサーバーへ送信する情報もありません。</strong>会員登録やログインもありません。広告表示のために Google AdMob SDK が処理する情報は第 4 項をご覧ください。</p>
 </div>
 <div class="card">
   <h2>2. 端末内にのみ保存される情報</h2>
@@ -278,17 +298,22 @@
     <tr><td>通知（POST_NOTIFICATIONS）</td><td>設定した間隔で四字熟語の通知を表示するためだけに使用します。許可しなくても通知以外の全機能を利用できます。</td></tr>
     <tr><td>起動完了の受信（RECEIVE_BOOT_COMPLETED）</td><td>端末の再起動後も設定した通知の間隔を維持するために使用します。</td></tr>
     <tr><td>バイブレーション（VIBRATE）</td><td>通知受信時に端末設定に従って振動します。</td></tr>
+    <tr><td>インターネット・ネットワーク状態（INTERNET、ACCESS_NETWORK_STATE）</td><td>広告（Google AdMob）の読み込みに使用します。学習機能はオフラインでも動作します。</td></tr>
+    <tr><td>広告 ID（AD_ID）</td><td>Google AdMob が広告の配信・測定に使用します。端末の設定で広告 ID を削除・リセットできます。</td></tr>
   </table>
-  <p>本アプリはインターネット（INTERNET）権限を要求せず、カメラ・マイク・連絡先・位置情報・ストレージにアクセスしません。</p>
+  <p>本アプリはカメラ・マイク・連絡先・位置情報・ストレージにアクセスしません。</p>
 </div>
 <div class="card">
-  <h2>4. 第三者提供および外部サービス</h2>
-  <p>本アプリは広告、分析（アナリティクス）、クラッシュレポート、ソーシャルログインなど、いかなる第三者 SDK も含まず、外部サーバーと通信しません。したがって第三者に提供される情報はありません。</p>
+  <h2>4. 広告および外部サービス</h2>
+  <p>本アプリは画面下部に Google LLC の AdMob バナー広告を表示します。広告の配信・測定・不正防止のため、AdMob SDK が以下の情報を収集し Google に送信する場合があります。</p>
+  <ul><li>広告 ID などの端末識別子、IP アドレス（おおよその位置）</li><li>端末モデル、OS バージョン、アプリ情報、広告の表示・クリックなどの操作情報</li><li>クラッシュおよびパフォーマンス診断情報</li></ul>
+  <p>これらの情報は Google のプライバシーポリシーに従って処理され、開発者はアクセスできません。詳しくは <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a> と <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google によるパートナーアプリの情報の使用</a> をご覧ください。パーソナライズド広告を希望しない場合は、端末の［設定 → Google → 広告］で広告 ID を削除・リセットできます。</p>
+  <p>広告以外に、分析・ソーシャルログインなどの第三者 SDK は含まず、開発者が運営するサーバーとも通信しません。</p>
   <p>「共有」機能は、ユーザーが選んだアプリへ熟語のテキストを渡す Android 標準の共有機能であり、渡された内容はそのアプリのプライバシーポリシーに従います。読み上げ（TTS）機能は端末にインストールされた音声合成エンジンを使用し、本アプリが音声データを保存・送信することはありません。</p>
 </div>
 <div class="card">
   <h2>5. 子どもの個人情報</h2>
-  <p>本アプリはすべての年齢の方が利用でき、子どもを含むいかなるユーザーからも個人情報を収集しません。</p>
+  <p>本アプリはすべての年齢の方が利用できます。開発者は子どもを含むいかなるユーザーからも個人情報を直接収集しません。広告は Google AdMob のポリシーに従って配信されます。</p>
 </div>
 <div class="card">
   <h2>6. ポリシーの変更</h2>
