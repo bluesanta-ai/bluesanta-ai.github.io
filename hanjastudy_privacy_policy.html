@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한자능력검정시험 개인정보처리방침</title>
+<style>
+  :root { --bg:#F8FAFC; --surface:#FFFFFF; --text:#0F172A; --sub:#475569; --accent:#4338CA; --line:#E2E8F0; --soft:#F1F5F9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0F172A; --surface:#1E293B; --text:#F8FAFC; --sub:#94A3B8; --accent:#818CF8; --line:#334155; --soft:#273449; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:"Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+         line-height:1.75; font-size:16px; word-break:keep-all; overflow-wrap:anywhere; }
+  header { background:linear-gradient(135deg,#4338CA,#0F172A); color:#F8FAFC; padding:34px 20px 26px; }
+  header .inner, main { max-width:760px; margin:0 auto; }
+  header h1 { margin:0; font-size:1.55rem; }
+  header p { margin:6px 0 0; color:#FDE68A; font-size:.95rem; }
+  main { padding:16px 16px 60px; }
+  .card { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:22px 22px 14px; margin-bottom:16px; }
+  h2 { font-size:1.12rem; color:var(--accent); margin:0 0 10px; }
+  p, li { margin:0 0 10px; } ul { padding-left:20px; margin:0 0 10px; }
+  .table-wrap { overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; margin:6px 0 14px; font-size:.93rem; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--soft); white-space:nowrap; }
+  .muted { color:var(--sub); font-size:.9rem; }
+  a { color:var(--accent); }
+  footer { text-align:center; color:var(--sub); font-size:.85rem; padding:0 16px 40px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1>한자능력검정시험</h1>
+  <p>개인정보처리방침</p>
+</div></header>
+
+<main>
+<div class="card">
+  <p><strong>시행일: 2026년 10월 1일</strong></p>
+  <p>본 개인정보처리방침은 Android 앱 「한자능력검정시험」(패키지명 com.korean.hanjastudy, 이하 "앱")에 적용됩니다. 앱은 개인정보를 수집하지 않으며, 인터넷 연결 없이 기기 안에서만 동작합니다.</p>
+</div>
+
+<div class="card">
+  <h2>1. 수집하는 개인정보</h2>
+  <p>앱은 이름, 이메일, 전화번호, 위치, 기기 식별자, 광고 ID 등 <strong>어떠한 개인정보도 수집·저장·전송하지 않습니다.</strong> 회원 가입이나 로그인 절차도 없습니다.</p>
+</div>
+
+<div class="card">
+  <h2>2. 기기 안에만 저장되는 정보</h2>
+  <p>다음 정보는 앱 기능을 위해 사용자의 기기 내부 저장 공간에만 저장되며, 개발자나 제3자에게 전송되지 않습니다.</p>
+  <div class="table-wrap"><table>
+    <tr><th>항목</th><th>용도</th></tr>
+    <tr><td>암기 완료 표시, 암기 점수, 즐겨찾기</td><td>암기 상태 표시, 퀴즈·플래시카드에서 암기한 한자 제외, 즐겨찾기 목록</td></tr>
+    <tr><td>사자성어 학습 기록(열람·학습 완료·즐겨찾기 등)</td><td>한자 상세 화면에서 보여 주는 사자성어 화면의 상태 유지</td></tr>
+    <tr><td>알림 설정(사용 여부, 알림 시각, 주기, 야간 제외 시간, 대상 급수)과 최초 알림 안내 표시 여부</td><td>사용자가 선택한 시간에 학습 알림 표시</td></tr>
+    <tr><td>위젯 설정(급수, 갱신 주기)과 위젯에 표시 중인 한자 번호</td><td>홈 화면 위젯 표시</td></tr>
+  </table></div>
+  <p>이 정보는 앱을 삭제하면 함께 삭제됩니다. Android의 자동 백업 기능이 켜져 있는 경우, 위 정보가 사용자의 Google 계정에 연결된 기기 백업에 포함될 수 있습니다. 이는 Android 시스템이 수행하며 개발자는 접근할 수 없습니다.</p>
+</div>
+
+<div class="card">
+  <h2>3. 앱 권한</h2>
+  <div class="table-wrap"><table>
+    <tr><th>권한</th><th>사용 목적</th></tr>
+    <tr><td>알림<br><span class="muted">POST_NOTIFICATIONS</span></td><td>사용자가 설정한 시각·주기에 오늘의 한자 알림을 표시하기 위해서만 사용합니다. 앱을 처음 실행할 때 허용 여부를 묻고, 허용하지 않아도 알림 외 모든 기능을 사용할 수 있습니다.</td></tr>
+    <tr><td>부팅 완료 수신<br><span class="muted">RECEIVE_BOOT_COMPLETED</span></td><td>기기를 다시 켠 뒤에도 사용자가 설정한 알림 일정을 유지하기 위해 사용합니다.</td></tr>
+    <tr><td>진동<br><span class="muted">VIBRATE</span></td><td>알림 도착 시 기기 설정에 따른 진동</td></tr>
+  </table></div>
+  <p>앱은 인터넷(INTERNET) 권한을 요청하지 않으며, 카메라·마이크·연락처·위치·사진 및 파일에 접근하지 않습니다.</p>
+</div>
+
+<div class="card">
+  <h2>4. 제3자 제공 및 외부 서비스</h2>
+  <p>앱은 광고, 분석(애널리틱스), 오류 보고, 소셜 로그인 등 어떠한 제3자 SDK도 포함하지 않으며, 외부 서버와 통신하지 않습니다. 따라서 제3자에게 제공되는 정보가 없습니다.</p>
+  <p>사자성어 화면의 "공유" 기능은 사용자가 직접 선택한 앱으로 성어 텍스트를 전달하는 Android 표준 공유 기능이며, 전달된 내용은 해당 앱의 개인정보처리방침을 따릅니다. 읽어 주기(TTS) 기능은 기기에 설치된 음성 합성 엔진을 사용하며, 앱이 음성 데이터를 저장하거나 전송하지 않습니다.</p>
+</div>
+
+<div class="card">
+  <h2>5. 아동의 개인정보</h2>
+  <p>앱은 초등학생을 포함한 모든 연령이 사용할 수 있으며, 아동을 포함한 어떤 사용자로부터도 개인정보를 수집하지 않습니다.</p>
+</div>
+
+<div class="card">
+  <h2>6. 방침의 변경</h2>
+  <p>본 방침이 변경되는 경우 이 페이지에 시행일과 함께 게시합니다. 개인정보를 새로 수집하게 되는 변경이 있을 때에는 앱 업데이트 안내를 통해 미리 알립니다.</p>
+</div>
+
+<div class="card">
+  <h2>7. 문의</h2>
+  <p>개인정보처리방침에 관한 문의는 아래로 연락해 주십시오.</p>
+  <p>이메일: <a href="mailto:mybluexmas@gmail.com">mybluexmas@gmail.com</a></p>
+</div>
+</main>
+
+<footer>© 2026 한자능력검정시험 · 본 앱은 한국어문회 등 시험 주관 기관과 관계가 없는 개인 학습용 앱입니다.</footer>
+</body>
+</html>
