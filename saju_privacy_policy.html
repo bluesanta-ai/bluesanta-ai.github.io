@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 정통사주 - 개인정보처리방침 (Privacy Policy)</title>
+    <title>AI 만세력 - 개인정보처리방침 (Privacy Policy)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <style>
         :root {
-            --primary-color: #8C2F39;
-            --primary-dark: #4A1A28;
-            --accent: #C8922A;
-            --bg-color: #FBF7F4;
+            --primary-color: #0B8478;
+            --primary-dark: #075E56;
+            --bg-color: #F8F9FA;
             --card-bg: #FFFFFF;
-            --text-main: #2B2024;
-            --text-muted: #6B7280;
-            --border-color: #EFE4DE;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --border-color: #E2E8F0;
         }
 
         * {
@@ -36,9 +37,9 @@
         header {
             background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
             color: #FFFFFF;
-            padding: 48px 24px 56px;
+            padding: 48px 24px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(140, 47, 57, 0.18);
+            box-shadow: 0 4px 20px rgba(11, 132, 120, 0.15);
         }
 
         header h1 {
@@ -51,28 +52,6 @@
         header p {
             font-size: 14px;
             opacity: 0.9;
-        }
-
-        .lang-switch {
-            margin-top: 18px;
-            display: inline-flex;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 999px;
-            padding: 4px;
-        }
-
-        .lang-switch a {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 500;
-            padding: 6px 16px;
-            border-radius: 999px;
-        }
-
-        .lang-switch a.active {
-            background: #FFFFFF;
-            color: var(--primary-dark);
         }
 
         .container {
@@ -93,10 +72,13 @@
         h2 {
             font-size: 18px;
             color: var(--primary-dark);
-            margin-top: 28px;
+            margin-top: 24px;
             margin-bottom: 12px;
             padding-bottom: 6px;
-            border-bottom: 2px solid #F5E6E0;
+            border-bottom: 2px solid #E0F2F1;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         h2:first-of-type {
@@ -106,7 +88,7 @@
         p,
         ul {
             font-size: 14px;
-            color: #3F3337;
+            color: #334155;
             margin-bottom: 12px;
         }
 
@@ -118,41 +100,15 @@
             margin-bottom: 6px;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13.5px;
-            margin-bottom: 12px;
-        }
-
-        th,
-        td {
-            border: 1px solid var(--border-color);
-            padding: 8px 10px;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        th {
-            background: #FAF1EC;
-            color: var(--primary-dark);
-            font-weight: 700;
-            white-space: nowrap;
-        }
-
         .highlight-box {
-            background-color: #FAF1EC;
+            background-color: #E0F2F1;
             border-left: 4px solid var(--primary-color);
             padding: 16px;
             border-radius: 8px;
-            margin: 0 0 20px;
+            margin: 16px 0;
             font-size: 14px;
-            color: #5B2333;
+            color: #004D40;
             font-weight: 500;
-        }
-
-        a {
-            color: var(--primary-color);
         }
 
         footer {
@@ -162,17 +118,9 @@
             margin-top: 32px;
         }
 
-        .lang {
-            display: none;
-        }
-
-        .lang.show {
-            display: block;
-        }
-
         @media (max-width: 600px) {
             header {
-                padding: 36px 16px 48px;
+                padding: 36px 16px;
             }
 
             header h1 {
@@ -182,10 +130,6 @@
             .card {
                 padding: 20px;
             }
-
-            th {
-                white-space: normal;
-            }
         }
     </style>
 </head>
@@ -193,296 +137,76 @@
 <body>
 
     <header>
-        <h1 id="title">AI 정통사주 - 개인정보처리방침</h1>
-        <p id="subtitle">시행일자: 2026년 10월 19일 | 앱 버전: 1.0.0</p>
-        <div class="lang-switch">
-            <a href="#ko" id="btn-ko" class="active">한국어</a>
-            <a href="#en" id="btn-en">English</a>
-        </div>
+        <h1>AI 만세력 개인정보처리방침</h1>
+        <p>시행일자: 2026년 8월 6일 | 앱 버전: 1.0.0</p>
     </header>
 
     <div class="container">
-
-        <!-- ===================== 한국어 ===================== -->
-        <div class="card lang show" id="ko">
+        <div class="card">
 
             <div class="highlight-box">
-                🔒 <strong>요약</strong><br>
-                'AI 정통사주' 앱은 회원가입이나 로그인이 없으며, 사용자가 입력한 생년월일·출생 시간 등 사주 정보와 손금 사진, 운세 결과를
-                <strong>개발자의 서버로 수집하거나 전송하지 않습니다.</strong> 모든 사주 계산과 풀이는 사용자의 기기 안에서 처리되고 기기에만 저장됩니다.
-                단, 무료 제공을 위한 광고(Google AdMob)는 Google 정책에 따라 일부 기기 정보를 이용할 수 있습니다.
+                🔒 <strong>보안 및 개인정보 보호 요약</strong><br>
+                'AI 만세력' 앱은 사용자의 입력 데이터(이름, 생년월일시, 성별)를 외부 서버로 수집·전송하지 않고, <strong>사용자의 단말기(기기) 내에서만 온디바이스(On-Device) 로직
+                    및 저장소로 처리</strong>합니다.
             </div>
 
-            <h2>1. 처리하는 정보와 목적</h2>
-            <p>'AI 정통사주'(이하 '앱')는 아래 정보를 사용자의 기기 안에서만 이용합니다.</p>
-            <table>
-                <tr>
-                    <th>항목</th>
-                    <th>이용 목적</th>
-                    <th>저장 위치</th>
-                </tr>
-                <tr>
-                    <td>이름(호칭), 성별, 생년월일, 출생 시간(또는 '모름'), 양력/음력·윤달 여부</td>
-                    <td>사주팔자·만세력 계산, 용신·오행 분석, 일주·전생 풀이, 오늘의 운세, 신년운세</td>
-                    <td>기기 내부 저장소(저장 목록)</td>
-                </tr>
-                <tr>
-                    <td>궁합 상대의 이름(호칭), 성별, 생년월일, 출생 시간</td>
-                    <td>두 사람의 궁합 풀이</td>
-                    <td>기기 내부 저장소(사용자가 저장한 경우)</td>
-                </tr>
-                <tr>
-                    <td>오늘의 운세 대상, 알림 사용 여부·알림 시간, 미리 계산한 운세 내용</td>
-                    <td>홈 화면 위젯과 매일 알림 표시</td>
-                    <td>기기 내부 저장소</td>
-                </tr>
-                <tr>
-                    <td>손바닥 사진(촬영 또는 갤러리에서 선택)</td>
-                    <td>손금 선 검출과 손금 풀이</td>
-                    <td>기기 안에서 분석에만 쓰고 서버로 보내지 않음</td>
-                </tr>
-                <tr>
-                    <td>성격유형(MBTI) 문항 응답</td>
-                    <td>성격유형 결과 계산</td>
-                    <td>기기 안에서만 처리</td>
-                </tr>
-                <tr>
-                    <td>앱 언어 설정</td>
-                    <td>화면과 풀이를 선택한 언어로 표시</td>
-                    <td>기기 내부 저장소</td>
-                </tr>
-            </table>
-            <p>이름은 실명이 아니어도 되며, 앱은 연락처·위치·계정 정보를 수집하지 않습니다.</p>
-
-            <h2>2. 보유 및 이용 기간</h2>
+            <h2>1. 수집하는 개인정보 항목 및 처리 목적</h2>
+            <p>'AI 만세력' 앱(이하 '앱')은 사주팔자 산출 및 AI 사주 해석 서비스 제공을 위하여 아래의 정보를 이용합니다.</p>
             <ul>
-                <li>기기에 저장된 정보는 사용자가 앱의 저장 목록에서 직접 삭제하거나 앱을 삭제할 때까지 기기에만 남습니다.</li>
-                <li>개발자가 운영하는 서버가 없으므로, 개발자가 보유하는 개인정보는 없습니다.</li>
+                <li><strong>입력 항목:</strong> 이름, 성별, 생년월일, 출생시간, 음력/양력/윤달 여부</li>
+                <li><strong>처리 목적:</strong> 동양 정통 명리학 만세력 계산, 원국/대운/세운/월운 분석 및 사용자 저장 목록(히스토리) 기능 제공</li>
+                <li><strong>수집 및 저장 방식:</strong> 입력된 모든 사주 명식 데이터는 사용자의 단말기 내부 기기 저장소(SharedPreferences)에만 저장되며,
+                    <strong>개발자나 외부 제3자 서버로 전송 또는 저장되지 않습니다.</strong>
+                </li>
             </ul>
 
-            <h2>3. 제3자 제공 및 광고(Google AdMob)</h2>
-            <p>앱은 무료 제공을 위해 Google의 모바일 광고 SDK(Google AdMob)를 사용합니다.</p>
+            <h2>2. 개인정보의 보유 및 이용 기간</h2>
             <ul>
-                <li>Google은 광고 게재와 광고 성과 측정을 위해 광고 ID, IP 주소, 기기·앱 정보 등을 Google 정책에 따라 수집하고 이용할 수 있습니다.</li>
-                <li>사용자가 입력한 사주 정보, 손금 사진, 운세 결과는 광고 SDK에 전달하지 않습니다.</li>
-                <li>기기 설정에서 광고 ID를 재설정하거나 맞춤 광고를 끌 수 있습니다.</li>
-                <li>자세한 내용: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>,
-                    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 광고 정책</a></li>
-            </ul>
-            <p>사용자가 '공유' 기능을 누르면 결과 문구가 사용자가 선택한 앱(메신저 등)으로 전달되며, 이후 처리는 해당 앱의 정책을 따릅니다.</p>
-
-            <h2>4. 기기 권한</h2>
-            <table>
-                <tr>
-                    <th>권한</th>
-                    <th>용도</th>
-                </tr>
-                <tr>
-                    <td>인터넷</td>
-                    <td>광고 수신, 공유·외부 링크 연결</td>
-                </tr>
-                <tr>
-                    <td>광고 ID</td>
-                    <td>Google AdMob 광고 게재</td>
-                </tr>
-                <tr>
-                    <td>카메라 (선택)</td>
-                    <td>손금 보기에서 손바닥 촬영. 사진은 기기 안에서만 분석합니다.</td>
-                </tr>
-                <tr>
-                    <td>알림 (선택)</td>
-                    <td>매일 '오늘의 운세' 알림(기본 오전 9시). 앱의 오늘의 운세 화면이나 기기 설정에서 끌 수 있습니다.</td>
-                </tr>
-                <tr>
-                    <td>부팅 완료 알림 수신</td>
-                    <td>기기를 다시 켠 뒤 오늘의 운세 알림과 위젯 갱신 예약을 복구</td>
-                </tr>
-                <tr>
-                    <td>저장소 읽기/쓰기</td>
-                    <td>Android 12 이하 기기 호환을 위한 선언이며, 이 앱이 지원하는 Android 13 이상 기기에서는 사용하지 않습니다.</td>
-                </tr>
-            </table>
-            <p>선택 권한을 허용하지 않아도 해당 기능을 제외한 나머지 기능은 그대로 이용할 수 있습니다.</p>
-
-            <h2>5. 이용자의 권리</h2>
-            <ul>
-                <li>앱의 저장 목록에서 저장한 사람의 정보를 언제든지 삭제할 수 있습니다.</li>
-                <li>오늘의 운세 알림은 앱 안의 설정이나 기기 알림 설정에서 끌 수 있으며, 위젯은 홈 화면에서 제거할 수 있습니다.</li>
-                <li>앱을 삭제하면 기기에 저장된 모든 앱 데이터가 함께 삭제됩니다.</li>
+                <li>앱 내 '저장 목록' 탭에 저장된 명식 데이터는 <strong>사용자가 앱 내 삭제 버튼을 눌러 직접 삭제하거나, 앱을 삭제(언인스톨)할 때까지</strong> 사용자의 기기에
+                    유지됩니다.</li>
+                <li>별도의 회원가입 절차가 없으므로 서버에 저장되는 회원 정보는 일체 존재하지 않습니다.</li>
             </ul>
 
-            <h2>6. 아동의 개인정보</h2>
-            <p>앱은 아동을 대상으로 하지 않으며, 연령과 관계없이 개인을 식별할 수 있는 정보를 개발자에게 수집하지 않습니다.</p>
-
-            <h2>7. 풀이 내용에 대한 안내</h2>
-            <p>앱의 사주·운세·궁합·손금 풀이는 명리학 등 전통 이론을 바탕으로 한 참고용 콘텐츠이며, 의학·법률·재정 등 전문적인 판단을 대신하지 않습니다.</p>
-
-            <h2>8. 문의처</h2>
+            <h2>3. 개인정보의 제3자 제공 및 위탁</h2>
+            <p>앱은 원칙적으로 사용자의 개인정보를 외부에 수집, 제공, 위탁하지 않습니다.</p>
             <ul>
-                <li>앱 이름: AI 정통사주 (om.bx.app_saju.banya)</li>
-                <li>문의 이메일: <a href="mailto:mybluexmas@gmail.com">mybluexmas@gmail.com</a></li>
+                <li>외부 분석 서버나 데이터 수집 서버를 운영하지 않습니다.</li>
+                <li>앱 내에서 생성되는 AI 프롬프트 및 사주 해석은 사용자 단말기 내부에서 처리되거나, 사용자가 직접 선택한 웹 브라우저 공유 방식으로 동작합니다.</li>
             </ul>
 
-            <h2>9. 방침의 변경</h2>
-            <p>이 개인정보처리방침은 법령이나 앱 기능이 바뀌면 수정될 수 있으며, 변경 시 이 페이지에 시행일자와 함께 게시합니다.</p>
-        </div>
-
-        <!-- ===================== English ===================== -->
-        <div class="card lang" id="en">
-
-            <div class="highlight-box">
-                🔒 <strong>Summary</strong><br>
-                'AI Classic Saju' has no sign-up or login. Your birth date, birth time and other chart details, palm photos and
-                fortune results are <strong>never collected by or sent to the developer's servers.</strong> All Saju calculations and
-                readings run on your device and are stored only on your device. Ads (Google AdMob), which keep the app free, may use some
-                device information under Google's policies.
-            </div>
-
-            <h2>1. Information processed and why</h2>
-            <p>'AI Classic Saju' (the "App") uses the following information on your device only.</p>
-            <table>
-                <tr>
-                    <th>Information</th>
-                    <th>Purpose</th>
-                    <th>Where it is kept</th>
-                </tr>
-                <tr>
-                    <td>Name (or nickname), gender, date of birth, time of birth (or "unknown"), solar/lunar calendar and leap month</td>
-                    <td>Four Pillars (Saju) calculation, favorable element and five elements analysis, Day Pillar and past-life readings, today's fortune, New Year fortune</td>
-                    <td>Device storage (saved list)</td>
-                </tr>
-                <tr>
-                    <td>Compatibility partner's name (or nickname), gender, date and time of birth</td>
-                    <td>Compatibility reading for two people</td>
-                    <td>Device storage (if you save it)</td>
-                </tr>
-                <tr>
-                    <td>Person chosen for today's fortune, notification on/off and time, pre-calculated fortune text</td>
-                    <td>Home screen widget and daily notification</td>
-                    <td>Device storage</td>
-                </tr>
-                <tr>
-                    <td>Palm photo (taken with the camera or picked from the gallery)</td>
-                    <td>Palm line detection and palm reading</td>
-                    <td>Analyzed on the device only, never uploaded</td>
-                </tr>
-                <tr>
-                    <td>Personality type (MBTI) answers</td>
-                    <td>Calculating the personality type result</td>
-                    <td>Processed on the device only</td>
-                </tr>
-                <tr>
-                    <td>App language setting</td>
-                    <td>Showing screens and readings in your language</td>
-                    <td>Device storage</td>
-                </tr>
-            </table>
-            <p>You do not need to use your real name. The App does not collect contacts, location or account information.</p>
-
-            <h2>2. Retention</h2>
+            <h2>4. 단말기 권한 사용 안내</h2>
+            <p>앱은 서비스 제공을 위해 최소한의 기기 권한만을 요청합니다.</p>
             <ul>
-                <li>Information stays on your device until you delete it from the saved list in the App or uninstall the App.</li>
-                <li>The developer runs no server for the App, so the developer holds no personal information.</li>
+                <li><strong>인터넷 (INTERNET):</strong> 사주 결과 공유 기능 및 웹 브라우저 연결 지원 목적</li>
+                <li><strong>저장소 (READ/WRITE_EXTERNAL_STORAGE):</strong> 사용자 기기 내부 설정 및 저장 목록 유지 목적</li>
             </ul>
 
-            <h2>3. Third parties and advertising (Google AdMob)</h2>
-            <p>The App uses Google's Mobile Ads SDK (Google AdMob) to stay free.</p>
+            <h2>5. 이용자의 권리 및 행사 방법</h2>
             <ul>
-                <li>Google may collect and use the advertising ID, IP address, and device and app information under its policies to serve and measure ads.</li>
-                <li>The Saju details you enter, palm photos and fortune results are never passed to the ads SDK.</li>
-                <li>You can reset your advertising ID or turn off personalized ads in your device settings.</li>
-                <li>More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>,
-                    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses information in ads</a></li>
-            </ul>
-            <p>When you tap "Share", the result text is handed to the app you choose (such as a messenger), and that app's own policy applies from then on.</p>
-
-            <h2>4. Device permissions</h2>
-            <table>
-                <tr>
-                    <th>Permission</th>
-                    <th>Use</th>
-                </tr>
-                <tr>
-                    <td>Internet</td>
-                    <td>Receiving ads, sharing and opening external links</td>
-                </tr>
-                <tr>
-                    <td>Advertising ID</td>
-                    <td>Serving Google AdMob ads</td>
-                </tr>
-                <tr>
-                    <td>Camera (optional)</td>
-                    <td>Taking a palm photo for palm reading. Photos are analyzed only on the device.</td>
-                </tr>
-                <tr>
-                    <td>Notifications (optional)</td>
-                    <td>Daily "today's fortune" notification (9:00 AM by default). You can turn it off on the App's today's fortune screen or in device settings.</td>
-                </tr>
-                <tr>
-                    <td>Receive boot completed</td>
-                    <td>Restoring the daily notification and widget update schedule after the device restarts</td>
-                </tr>
-                <tr>
-                    <td>Storage read/write</td>
-                    <td>Declared only for compatibility with Android 12 and earlier; not used on Android 13 and later, which this App requires.</td>
-                </tr>
-            </table>
-            <p>If you do not grant an optional permission, every other feature still works.</p>
-
-            <h2>5. Your rights</h2>
-            <ul>
-                <li>You can delete any saved person from the saved list in the App at any time.</li>
-                <li>You can turn off the daily notification in the App or in device notification settings, and remove the widget from your home screen.</li>
-                <li>Uninstalling the App deletes all of its data from your device.</li>
+                <li>이용자는 언제든지 앱 내부 '저장 목록' 탭에서 저장된 사주 명식 데이터를 개별 삭제할 수 있습니다.</li>
+                <li>앱 삭제 시 기기에 저장된 모든 관련 데이터는 즉시 함께 파기됩니다.</li>
             </ul>
 
-            <h2>6. Children's privacy</h2>
-            <p>The App is not directed at children, and it does not collect personally identifiable information to the developer from users of any age.</p>
+            <h2>6. 아동의 개인정보 보호</h2>
+            <p>본 앱은 만 14세 미만 아동을 포함하여 모든 연령층이 이용 가능하며, 어떠한 개인식별정보도 수집하지 않습니다.</p>
 
-            <h2>7. About the readings</h2>
-            <p>Saju, fortune, compatibility and palm readings in the App are reference content based on traditional theories such as Four Pillars astrology. They do not replace professional medical, legal or financial advice.</p>
-
-            <h2>8. Contact</h2>
+            <h2>7. 개인정보 보호책임자 및 문의처</h2>
+            <p>개인정보 처리방침에 관한 문의사항이 있으신 경우 아래 연락처로 문의해 주시기 바랍니다.</p>
             <ul>
-                <li>App: AI Classic Saju (om.bx.app_saju.banya)</li>
-                <li>Email: <a href="mailto:mybluexmas@gmail.com">mybluexmas@gmail.com</a></li>
+                <li><strong>앱명:</strong> AI 만세력 (com.bx.app_saju)</li>
+                <li><strong>문의 이메일:</strong> mybluexmas@gmail.com</li>
             </ul>
 
-            <h2>9. Changes to this policy</h2>
-            <p>This policy may be updated when laws or App features change. Changes will be posted on this page with a new effective date.</p>
+            <h2>8. 개인정보처리방침의 변경</h2>
+            <p>본 개인정보처리방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 앱 내 또는 관련 페이지를 통해 공지합니다.</p>
+
         </div>
 
         <footer>
-            &copy; 2026 AI 정통사주 (AI Classic Saju). All rights reserved.
+            &copy; 2026 AI 만세력 (AI Manseoryeok). All rights reserved.
         </footer>
     </div>
 
-    <script>
-        (function () {
-            var text = {
-                ko: { title: 'AI 정통사주 - 개인정보처리방침', subtitle: '시행일자: 2026년 10월 19일 | 앱 버전: 1.0.0', lang: 'ko' },
-                en: { title: 'AI Classic Saju - Privacy Policy', subtitle: 'Effective date: October 19, 2026 | App version: 1.0.0', lang: 'en' }
-            };
-            function show(code) {
-                if (!text[code]) code = 'ko';
-                document.getElementById('ko').classList.toggle('show', code === 'ko');
-                document.getElementById('en').classList.toggle('show', code === 'en');
-                document.getElementById('btn-ko').classList.toggle('active', code === 'ko');
-                document.getElementById('btn-en').classList.toggle('active', code === 'en');
-                document.getElementById('title').textContent = text[code].title;
-                document.getElementById('subtitle').textContent = text[code].subtitle;
-                document.documentElement.lang = text[code].lang;
-            }
-            function fromHash() {
-                var h = (location.hash || '').replace('#', '');
-                if (h) return h;
-                var nav = (navigator.language || 'ko').toLowerCase();
-                return nav.indexOf('ko') === 0 ? 'ko' : 'en';
-            }
-            window.addEventListener('hashchange', function () { show(fromHash()); });
-            show(fromHash());
-        })();
-    </script>
 </body>
 
 </html>
