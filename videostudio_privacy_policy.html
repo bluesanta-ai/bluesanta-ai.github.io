@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>비디오스튜디오 개인정보처리방침</title>
+<style>
+  :root { --bg:#F8FAFC; --surface:#FFFFFF; --text:#0F172A; --sub:#475569; --accent:#0369A1; --line:#E2E8F0; --soft:#F1F5F9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0F172A; --surface:#1E293B; --text:#F8FAFC; --sub:#94A3B8; --accent:#7CC7FF; --line:#334155; --soft:#273449; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:"Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+         line-height:1.75; font-size:16px; word-break:keep-all; overflow-wrap:anywhere; }
+  header { background:linear-gradient(135deg,#0369A1,#121212); color:#F8FAFC; padding:34px 20px 26px; }
+  header .inner, main { max-width:760px; margin:0 auto; }
+  header h1 { margin:0; font-size:1.55rem; }
+  header p { margin:6px 0 0; color:#BAE6FD; font-size:.95rem; }
+  main { padding:16px 16px 60px; }
+  .card { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:22px 22px 14px; margin-bottom:16px; }
+  h2 { font-size:1.12rem; color:var(--accent); margin:0 0 10px; }
+  p, li { margin:0 0 10px; } ul { padding-left:20px; margin:0 0 10px; }
+  .table-wrap { overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; margin:6px 0 14px; font-size:.93rem; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--soft); white-space:nowrap; }
+  .muted { color:var(--sub); font-size:.9rem; }
+  a { color:var(--accent); }
+  footer { text-align:center; color:var(--sub); font-size:.85rem; padding:0 16px 40px; }
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <h1>비디오스튜디오 (VideoStudio)</h1>
+  <p>개인정보처리방침</p>
+</div></header>
+
+<main>
+<div class="card">
+  <p><strong>시행일: 2026년 10월 19일</strong></p>
+  <p>본 개인정보처리방침은 Android 앱 「비디오스튜디오」(패키지명 com.bx.videostudio, 이하 "앱")에 적용됩니다. 앱의 영상 편집 기능(구간 자르기, 얼굴 모자이크·스티커, 표지, 워터마크, MP4·GIF 변환)은 모두 사용자의 기기 안에서만 처리되며, 개발자는 사용자의 영상·사진·개인정보를 수집하거나 서버로 전송하지 않습니다. 다만 앱은 무료 제공을 위해 Google AdMob 광고를 표시할 수 있으며, 이 경우 Google이 아래 5항의 정보를 처리할 수 있습니다.</p>
+</div>
+
+<div class="card">
+  <h2>1. 수집하는 개인정보</h2>
+  <p>개발자는 회원가입, 로그인, 이름·이메일·전화번호 등 어떠한 개인정보도 요구하거나 수집하지 않습니다. 앱에는 개발자가 운영하는 서버가 없으며, 사용자가 편집하는 영상과 이미지는 기기 밖으로 전송되지 않습니다.</p>
+</div>
+
+<div class="card">
+  <h2>2. 기기 안에서만 처리·저장되는 정보</h2>
+  <div class="table-wrap"><table>
+    <tr><th>항목</th><th>처리 방식</th></tr>
+    <tr><td>사용자가 고른 영상</td><td>시스템 사진 선택기로 사용자가 직접 고른 파일만 읽습니다. 변환을 위해 앱 전용 캐시 폴더에 임시 사본이 만들어질 수 있습니다.</td></tr>
+    <tr><td>표지·워터마크 이미지, 문구</td><td>사용자가 고르거나 입력한 이미지·텍스트를 편집 중에만 사용하며 앱 캐시에 임시 저장합니다.</td></tr>
+    <tr><td>편집 결과(MP4·GIF)</td><td>앱 캐시에 만들어지고, 사용자가 「갤러리에 저장」을 누를 때만 기기 갤러리(Movies/VideoStudio, Pictures/VideoStudio)에 저장됩니다.</td></tr>
+  </table></div>
+  <p>앱 캐시의 임시 파일은 하루가 지나면 앱이 자동으로 지우며, 앱을 삭제하면 모두 함께 삭제됩니다.</p>
+</div>
+
+<div class="card">
+  <h2>3. 얼굴 인식 기능에 관하여</h2>
+  <p>얼굴 모자이크·이모티콘·스티커 기능은 기기에 내장된 얼굴 검출 모델로 영상 속 얼굴의 <strong>위치</strong>(사각형 영역과 눈·코·입의 대략적 좌표)만 찾아 효과를 입히는 데 사용합니다.</p>
+  <ul>
+    <li>누구의 얼굴인지 식별하거나, 얼굴 특징 정보(생체 인식 정보)를 만들거나 저장하지 않습니다.</li>
+    <li>검출 결과는 해당 프레임을 처리하는 동안 메모리에서만 쓰이고 즉시 버려지며, 파일로 저장되거나 외부로 전송되지 않습니다.</li>
+    <li>얼굴 기능을 쓰지 않으면 얼굴 검출은 실행되지 않습니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>4. 앱 권한</h2>
+  <div class="table-wrap"><table>
+    <tr><th>권한</th><th>용도</th></tr>
+    <tr><td>사진·동영상 선택(시스템 선택기)</td><td>사용자가 직접 고른 영상·이미지만 앱에 전달됩니다. 별도의 저장공간 전체 접근 권한은 요청하지 않습니다.</td></tr>
+    <tr><td>저장공간 쓰기 (Android 9 이하만)</td><td>편집 결과를 갤러리에 저장할 때만 사용합니다.</td></tr>
+    <tr><td>WAKE_LOCK</td><td>긴 영상을 내보내는 동안 처리가 중단되지 않도록 CPU를 유지합니다.</td></tr>
+    <tr><td>인터넷</td><td>광고 표시에만 사용되며, 사용자의 영상·이미지는 전송하지 않습니다.</td></tr>
+  </table></div>
+</div>
+
+<div class="card">
+  <h2>5. 광고 (Google AdMob)</h2>
+  <p>앱에 광고가 표시되는 경우, Google AdMob SDK가 광고 제공·성과 측정·부정 행위 방지를 위해 기기 광고 ID, IP 주소, 기기·앱 정보, 광고 상호작용 정보 등을 수집·처리할 수 있습니다. 이 정보는 Google의 개인정보처리방침에 따라 처리되며 개발자는 이를 직접 받거나 열람하지 않습니다.</p>
+  <ul>
+    <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+    <li>Google 파트너 사이트·앱의 데이터 사용: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
+    <li>맞춤 광고는 기기의 <strong>설정 → Google → 광고</strong>(또는 <strong>설정 → 개인정보 보호 → 광고</strong>)에서 광고 ID를 재설정·삭제하거나 맞춤 광고를 끌 수 있습니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>6. 공유</h2>
+  <p>사용자가 「공유」를 누르면 Android 공유 화면을 통해 사용자가 선택한 앱(메신저, SNS 등)으로 결과 파일이 전달됩니다. 이후의 처리는 해당 앱의 개인정보처리방침을 따릅니다. 개발자는 공유 내용에 접근하지 않습니다.</p>
+</div>
+
+<div class="card">
+  <h2>7. 아동의 개인정보</h2>
+  <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+</div>
+
+<div class="card">
+  <h2>8. 오픈소스</h2>
+  <p class="muted">앱은 영상 처리를 위해 FFmpeg(LGPL 2.1), OpenH264(BSD, Cisco), ONNX Runtime(MIT)을 사용합니다. 이들 라이브러리는 기기 안에서만 동작하며 데이터를 외부로 보내지 않습니다.</p>
+</div>
+
+<div class="card">
+  <h2>9. 방침의 변경</h2>
+  <p>본 방침이 변경되는 경우 이 페이지에 시행일과 함께 게시합니다.</p>
+</div>
+
+<div class="card">
+  <h2>10. 문의</h2>
+  <p>개인정보 관련 문의는 아래 이메일로 연락해 주세요.</p>
+  <p>이메일: <a href="mailto:mybluexmas@gmail.com">mybluexmas@gmail.com</a></p>
+</div>
+</main>
+
+<footer>© 2026 비디오스튜디오 (VideoStudio)</footer>
+</body>
+</html>
