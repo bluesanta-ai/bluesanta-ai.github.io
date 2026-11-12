@@ -54,8 +54,7 @@
     <table>
       <tr><th>구분</th><th>정보 항목</th><th>목적</th><th>처리 위치</th></tr>
       <tr><td>번역할 글과 번역 결과</td><td>입력한 한국어·태국어 문장, 번역된 문장</td><td>번역 결과를 보여 주기 위해</td><td>이용자 기기 안에서만 처리 (저장·전송하지 않음)</td></tr>
-      <tr><td>사진</td><td>카메라로 찍거나 앨범에서 고른 사진</td><td>사진 속 글자를 인식해 번역할 글로 넣기 위해</td><td>이용자 기기 안에서만 처리 (전송하지 않음)</td></tr>
-      <tr><td>음성</td><td>음성 입력 버튼을 누른 뒤 말한 내용</td><td>말한 내용을 글자로 바꾸기 위해</td><td>기기에 설치된 음성 인식 서비스가 처리 (3번 항목 참고)</td></tr>
+      <tr><td>음성</td><td>음성 입력 버튼을 누른 뒤 말한 내용</td><td>말한 내용을 글자로 바꾸기 위해</td><td>기기에 설치된 음성 인식 앱이 처리 (3번 항목 참고)</td></tr>
       <tr><td>광고 관련 정보</td><td>광고 ID, 기기 정보(모델·OS 버전 등), IP 주소, 광고 조회·클릭 기록</td><td>광고 표시와 광고 성과 측정 (Google AdMob)</td><td>Google이 수집·처리</td></tr>
     </table>
     </div>
@@ -77,8 +76,7 @@
     <h2>3. 기능별 처리 방식</h2>
     <ul>
       <li><b>번역</b>: 앱에 포함된 AI 번역 모델이 기기 안에서 번역합니다. 인터넷 연결 없이 동작하며, 입력한 글과 번역 결과는 외부로 전송되지 않습니다.</li>
-      <li><b>카메라 글자 인식(OCR)</b>: 사진 속 글자는 기기 안에서 인식합니다(Google ML Kit 기기 내 글자 인식, Tesseract). 사진은 외부로 전송되지 않으며, 촬영용 임시 파일은 앱 전용 저장 공간에만 만들어집니다. ML Kit은 기능 개선을 위해 사진 내용과 무관한 사용·진단 정보를 Google에 보낼 수 있습니다(<a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">ML Kit 약관</a>).</li>
-      <li><b>음성 입력</b>: 음성 입력 버튼을 누르면 기기에 설치된 음성 인식 서비스(예: Google 음성 서비스)가 실행됩니다. 음성은 그 서비스 제공자가 처리하며 서비스에 따라 서버로 전송될 수 있습니다. 앱은 인식된 글자만 받고 음성을 저장하지 않습니다.</li>
+      <li><b>음성 입력</b>: 음성 입력 버튼을 누르면 기기에 설치된 음성 인식 앱(예: Google 음성 서비스)의 화면이 열립니다. 음성은 그 앱이 직접 듣고 처리하며 서비스에 따라 서버로 전송될 수 있습니다. 앱은 마이크를 직접 사용하지 않고 인식된 글자만 받으며, 음성을 저장하지 않습니다.</li>
       <li><b>발음 듣기</b>: 기기에 설치된 음성 합성(TTS) 엔진으로 번역 결과를 읽어 줍니다. 엔진에 따라 읽을 글이 엔진 제공자에게 전달될 수 있습니다.</li>
       <li><b>붙여넣기·복사·공유</b>: 버튼을 눌렀을 때만 클립보드를 읽거나 쓰고, 공유는 이용자가 직접 고른 앱으로만 전달됩니다.</li>
     </ul>
@@ -89,18 +87,16 @@
     <div class="table-wrap">
     <table>
       <tr><th>권한</th><th>사용 목적</th><th>필수 여부</th></tr>
-      <tr><td>카메라</td><td>사진을 찍어 글자를 인식할 때</td><td>선택 (거부해도 번역 등 다른 기능 사용 가능)</td></tr>
-      <tr><td>마이크</td><td>음성으로 번역할 글을 입력할 때</td><td>선택 (거부해도 번역 등 다른 기능 사용 가능)</td></tr>
       <tr><td>인터넷·네트워크 상태</td><td>광고 표시</td><td>자동 허용</td></tr>
       <tr><td>광고 ID</td><td>광고 표시와 성과 측정 (Google AdMob)</td><td>자동 허용 (기기 설정에서 광고 ID 삭제 가능)</td></tr>
     </table>
     </div>
-    <p>카메라·마이크 권한은 기기의 <b>설정 › 애플리케이션 › 한국어 태국어 번역기 › 권한</b>에서 언제든 바꿀 수 있습니다.</p>
+    <p>앱은 카메라, 마이크, 저장소, 위치, 연락처 권한을 요청하지 않습니다.</p>
   </div>
 
   <div class="card">
     <h2>5. 보유 기간과 파기</h2>
-    <p>앱은 번역할 글, 번역 결과, 사진, 음성을 저장하지 않습니다. 글자 인식을 위해 만든 임시 사진 파일과 앱 설정은 앱 데이터를 삭제하거나 앱을 삭제하면 함께 삭제됩니다. 개발자는 이 정보를 별도로 보관하지 않습니다.</p>
+    <p>앱은 번역할 글, 번역 결과, 음성을 저장하지 않습니다. 앱 설정(광고 동의 상태 등)은 앱 데이터를 삭제하거나 앱을 삭제하면 함께 삭제됩니다. 개발자는 이 정보를 별도로 보관하지 않습니다.</p>
     <p>Google이 수집한 광고 관련 정보의 보유 기간은 Google의 정책을 따릅니다.</p>
   </div>
 
@@ -111,7 +107,6 @@
     <table>
       <tr><th>업체</th><th>내용</th></tr>
       <tr><td>Google LLC (AdMob, 동의 관리 UMP)</td><td>광고 표시, 광고 성과 측정, 부정 클릭 방지, 광고 개인정보 동의 관리</td></tr>
-      <tr><td>Google LLC (ML Kit)</td><td>기기 내 글자 인식 (사진은 전송되지 않음)</td></tr>
     </table>
     </div>
   </div>
@@ -144,10 +139,11 @@
   <div class="card">
     <h2>Privacy Policy (English summary)</h2>
     <p>Korean-Thai Translator (com.bx.app_th_ko) has no account or login. Translation runs entirely on your device with a built-in AI model; the text you enter and the translation results are not stored and are not sent to the developer or any server.</p>
-    <p>Camera OCR recognizes text on the device (Google ML Kit on-device text recognition and Tesseract); photos are not uploaded. ML Kit may send usage and diagnostic data unrelated to image content to Google. Voice input uses the speech recognition service installed on your device (for example Google), which may process audio on its servers; the app only receives the recognized text. Listening uses the device's text-to-speech engine.</p>
+    <p>Voice input opens the speech recognition app installed on your device (for example Google), which listens and may process audio on its servers; this app does not use the microphone itself and only receives the recognized text. Listening uses the device's text-to-speech engine.</p>
     <p>The app shows banner ads through Google AdMob. Google may collect the advertising ID, device information, IP address and ad interaction data under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>. In regions where consent is required (EEA, UK, Switzerland), a consent form is shown and can be changed any time from the Privacy settings button in the app.</p>
-    <p>Permissions: camera (optional, photo text recognition), microphone (optional, voice input), internet and advertising ID (ads). The app is not directed to children under 14. Contact: <a href="mailto:mybluexmas@gmail.com">mybluexmas@gmail.com</a></p>
+    <p>Permissions: internet and advertising ID (ads) only. The app does not request camera, microphone, storage, location or contacts permissions. The app is not directed to children under 14. Contact: <a href="mailto:mybluexmas@gmail.com">mybluexmas@gmail.com</a></p>
   </div>
 </main>
+<footer>© 2026 파란산타 · 한국어 태국어 번역기</footer>
 </body>
 </html>
